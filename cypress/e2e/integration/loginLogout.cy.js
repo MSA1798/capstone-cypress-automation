@@ -42,6 +42,7 @@ describe('validate login logout', () => {
 
   it('should log out the user', () => {
     cy.get('a[aria-label="Orders"]').click();
+    cy.wait(2000);
     cy.get('input#email').type(userId);
     cy.get('input#password').type(password);
     cy.contains('button', 'log in', {matchCase : false}).click();
