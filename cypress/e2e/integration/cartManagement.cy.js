@@ -107,36 +107,5 @@ describe('cart management test', () => {
     });
   });
 
-  // it('should validate checkout process', () => {
-  //   cy.get('#twotabsearchtextbox').type('smartphones');
-  //   cy.get('#nav-search-submit-button').click();
-  //   cy.wait(3000);
-  //   cy.get('div[data-csa-c-action-name="addToCart"] button.a-button-text').then(($buttons) => {
-  //     const filteredButtons = Array.from($buttons).filter(btn => btn.textContent.includes('Add to cart'));
-  //     cy.log(`Number of "Add to cart" buttons found: ${filteredButtons.length}`);
-  //     if (filteredButtons.length >= 3) {
-  //       const buttonsToClick = filteredButtons.slice(0, 3);
-  //       buttonsToClick.forEach(($btn) => {
-  //         cy.wrap($btn).click();
-  //         cy.wait(1000);
-  //       });
 
-  //       cy.log(`Clicked ${buttonsToClick.length} buttons.`);
-  //     } else {
-  //       cy.log(`Found ${filteredButtons.length} "Add to cart" buttons. Less than 3, so no clicks performed.`);
-  //     }
-  //   });
-  //   cy.get('#nav-cart').click();
-  //   cy.get('[data-feature-id="proceed-to-checkout-action"]').click();
-  //   cy.contains('h1', 'Sign in').should('be.visible');
-  //   cy.get('input[name="email"]').type('7908680960');
-  //   cy.get('input#continue').click();
-  //   cy.get('input[name="password"]').type('Sahin@1234');
-  //   cy.get('input#signInSubmit').click();
-  //   cy.get('input[data-testid="Address_selectShipToThisAddress"]').click();
-  //   const textsToCheck = ['card', 'emi', 'upi', 'net banking'];
-  //   textsToCheck.forEach(text => {
-  //     cy.contains('body', text, { matchCase: false }).should('be.visible');
-  //   });
-  // });
 })

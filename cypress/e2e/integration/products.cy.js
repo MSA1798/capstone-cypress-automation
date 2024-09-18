@@ -40,7 +40,7 @@ describe('validate product details', () => {
           cy.log('Intercepted response:', response);
           cy.visit(`${response.productUrl}`, { failOnStatusCode: false });
           cy.wait(2000);
-          cy.get('input.a-button-input[type="submit"]').contains('Add to Cart').click();
+          cy.get('input#add-to-cart-button').click();
           cy.get('.a-alert-heading').contains('Added to Cart');
         });
   });
